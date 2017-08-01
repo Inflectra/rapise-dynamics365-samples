@@ -45,6 +45,9 @@
             <Path>Config.js</Path>
           </TestFile>
           <TestFile>
+            <Path>Config.json</Path>
+          </TestFile>
+          <TestFile>
             <Path>CreateReleasedProduct.js</Path>
           </TestFile>
           <TestFile>

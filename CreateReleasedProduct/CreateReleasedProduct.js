@@ -3,9 +3,8 @@
 
 function Test()
 {
-	//ConfigUnitTest();	return;
-	
-	JavaScriptMode(); return;
+	//JavaScriptMode();
+	RVL.DoPlayScript();
 }
 
 g_load_libraries=["%g_browserLibrary:Chrome HTML%","DomDynamicsAX"];

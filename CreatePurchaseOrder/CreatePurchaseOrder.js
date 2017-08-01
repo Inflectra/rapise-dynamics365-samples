@@ -1,9 +1,8 @@
 
 
-
 function Test()
 {
-	RVL.DoPlayScript();
+	RVL.DoPlayScript();
 }
 
 g_load_libraries=["%g_browserLibrary:Chrome HTML%", "DomDynamicsAX"];
