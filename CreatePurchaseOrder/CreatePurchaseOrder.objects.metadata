@@ -1,0 +1,8699 @@
+{
+	"NavigationSearchBox": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSearch",
+				"signature": "/**string*/ text"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			}
+		],
+		"items": null,
+		"window_text": "Dashboard -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXNavigationSearch",
+		"object_flavor": "Search",
+		"object_name": "NavigationSearchBox",
+		"window_name": "Dashboard -- Operations",
+		"xpath": "//div[@id='NavigationSearch']",
+		"title": "Dashboard -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=DefaultDashboard"
+	},
+	"_New": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "New",
+		"object_library": "Chrome HTML",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//button[@id='purchtablelistpage_14_SystemDefinedNewButton']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"PurchCreateOrder_PurchTable_Orde": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**string*/ text"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoOpen",
+				"signature": ""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Text",
+				"setsign": "/**string*/ text",
+				"getsign": "",
+				"readonly": false
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXComboBox",
+		"object_flavor": "ComboBox",
+		"object_name": "PurchCreateOrder_PurchTable_OrderAccount",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='PurchCreateOrder_15_PurchTable_OrderAccount']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"VendTable_SysTL_Grid": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, /**string*/ clickType, /**Number*/ xOffset, /**Number*/ yOffset",
+                "tag": "DomDynamicsAXGrid"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "VendTable_SysTL_Grid",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='VendTable_SysTL_16_Grid']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"PurchCreateOrder_ContentTabs": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoExpand",
+				"signature": "/**string*/ tabName"
+			},
+			{
+				"name": "DoCollapse",
+				"signature": "/**string*/ tabName"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Expanded",
+				"setsign": "",
+				"getsign": "/**string*/ tabName",
+				"readonly": true
+			},
+			{
+				"name": "ItemsCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "TabName",
+				"setsign": "",
+				"getsign": "/**number*/ index",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXTabControl",
+		"object_flavor": "TabControl",
+		"object_name": "PurchCreateOrder_ContentTabs",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='PurchCreateOrder_15_ContentTabs']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"PurchCreateOrder_PurchTable_Inve": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**string*/ text"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoOpen",
+				"signature": ""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Text",
+				"setsign": "/**string*/ text",
+				"getsign": "",
+				"readonly": false
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXComboBox",
+		"object_flavor": "ComboBox",
+		"object_name": "PurchCreateOrder_PurchTable_InventSiteId",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='PurchCreateOrder_15_PurchTable_InventSiteId']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"InventSite_SysTL_Grid": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "InventSite_SysTL_Grid",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='InventSite_SysTL_19_Grid']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"PurchCreateOrder_PurchTable_Inve1": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**string*/ text"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoOpen",
+				"signature": ""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Text",
+				"setsign": "/**string*/ text",
+				"getsign": "",
+				"readonly": false
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXComboBox",
+		"object_flavor": "ComboBox",
+		"object_name": "PurchCreateOrder_PurchTable_InventLocationId",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='PurchCreateOrder_15_PurchTable_InventLocationId']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"PurchCreateOrder__PurchTable_Inv": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "PurchCreateOrder__PurchTable_InventLocationId_SysTCL_Grid",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='PurchCreateOrder__PurchTable_InventLocationId_SysTCL_20_Grid']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"OK": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "OK",
+		"object_library": "Chrome HTML",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//button[@id='PurchCreateOrder_15_OK']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"purchtablelistpage_LineSpec": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "purchtablelistpage_LineSpec",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='purchtablelistpage_14_LineSpec']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"InventItemIdLookupPurchase_Grid": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "InventItemIdLookupPurchase_Grid",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='InventItemIdLookupPurchase_21_Grid']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"InventItemIdLookupPurchase_Grid1": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "InventItemIdLookupPurchase_Grid",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='InventItemIdLookupPurchase_23_Grid']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"purchtablelistpage_LineViewTab": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoExpand",
+				"signature": "/**string*/ tabName"
+			},
+			{
+				"name": "DoCollapse",
+				"signature": "/**string*/ tabName"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Expanded",
+				"setsign": "",
+				"getsign": "/**string*/ tabName",
+				"readonly": true
+			},
+			{
+				"name": "ItemsCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "TabName",
+				"setsign": "",
+				"getsign": "/**number*/ index",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Add line",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXTabControl",
+		"object_flavor": "TabControl",
+		"object_name": "purchtablelistpage_LineViewTab",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='purchtablelistpage_14_LineViewTab']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"Add_line": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "Add line",
+		"object_library": "Chrome HTML",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//button[@id='purchtablelistpage_14_LineStripNew']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"Save": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "Save",
+		"object_library": "Chrome HTML",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//button[@id='purchtablelistpage_14_SystemDefinedSaveButton']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"purchtablelistpage_14_SystemDefi": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "Chrome Legacy Window",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Button",
+		"object_name": "purchtablelistpage_14_SystemDefinedCloseButton",
+		"object_library": "Chrome HTML",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//button[@id='purchtablelistpage_14_SystemDefinedCloseButton']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"HeaderTitle": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				}
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\""
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\""
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\""
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\""
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "param:object_name",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "HTMLObject",
+		"object_flavor": "Cell",
+		"object_name": "000061 : Test Vendor - Test Vendor",
+		"object_library": "Chrome HTML",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//span[@id='purchtablelistpage_14_HeaderTitle']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	},
+	"purchtablelistpage_Grid": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClick",
+				"signature": "x, y, forceEvent",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"x": {
+						"type": "Number",
+						"optional": true
+					},
+					"y": {
+						"type": "Number",
+						"optional": true
+					},
+					"forceEvent": {
+						"type": "bool",
+						"optional": true
+					}
+				},
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDumpWidget",
+				"signature": "filePath",
+				"tag": "Generic"
+			},
+			{
+				"name": "DoDblClick",
+				"signature": "",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/txt",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSelect",
+				"signature": "/**String*/txt",
+				"description": "User selects \"%param0% in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoCheckElement",
+				"signature": "/**String*/xpath",
+				"description": "Check if the element defined by xpath \"%param0%\" exists in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoAddSelection",
+				"signature": "/**String*/optionText",
+				"description": "User adds \"%param0%\" to selection in \"%object_name%\" in window \"%window_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoRemoveSelection",
+				"signature": "/**String*/optionText",
+				"description": "User removes \"%param0%\" from selection in \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetSelection",
+				"signature": "/**String*/delim",
+				"description": "Get selected options of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoGetRect",
+				"signature": "",
+				"description": "Get bounds rectangle of \"%object_name%\"",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMRoot",
+				"signature": "",
+				"description": "Find root element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMParent",
+				"signature": "",
+				"description": "Find parent element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMNextSibling",
+				"signature": "",
+				"description": "Find next sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMPrevSibling",
+				"signature": "",
+				"description": "Find previous sibling element for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildrenCount",
+				"signature": "",
+				"description": "Return number of children elements for this one",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMChildAt",
+				"signature": "/**Number*/n",
+				"description": "Get child #%param0% of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttribute",
+				"signature": "/**String*/attrName",
+				"description": "Get attribute '%param0%' of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMGetAttributes",
+				"signature": "",
+				"description": "Get attributes of %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMFindParentWithAttribute",
+				"signature": "/**String*/attrName, /**String*/match",
+				"description": "Get parent element of '%object_name%' having attribute '%param0%' matching '%param1%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryXPath",
+				"signature": "/**String*/xpath",
+				"description": "Get array of elements matching '%param0%' XPath query on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMQueryCss",
+				"signature": "/**String*/css",
+				"description": "Get array of elements matching '%param0%' CSS selector on %object_name%",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoDOMConvert",
+				"signature": "/**String*/ type",
+				"description": "Convert %object_name% object to a type '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoSetCheck",
+				"signature": "/**Boolean*/ state",
+				"description": "Set %object_name% checked state to '%param0%'",
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "DoClickCell",
+				"signature": "/**Number*/ rowIndex, /**Number*/ columnIndex, clickType, /**Number*/ xOffset, /**Number*/ yOffset"
+			},
+			{
+				"name": "DoClickText",
+				"signature": "text, index"
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "Generic"
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "Generic"
+			},
+			{
+				"name": "ClientX",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ClientY",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Label",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Alt",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Title",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "InnerText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "NodeText",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Checked",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Enabled",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Id",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Style",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Tag",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "Href",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "XPath",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageURL",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "PageTitle",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true,
+				"tag": "HTMLObject"
+			},
+			{
+				"name": "ColumnCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ColumnName",
+				"setsign": "",
+				"getsign": "/**number*/columnIndex",
+				"readonly": true
+			},
+			{
+				"name": "RowCount",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Cell",
+				"setsign": "",
+				"getsign": "/**number*/rowIndex, /**number*/columnIndex",
+				"readonly": true
+			}
+		],
+		"items": null,
+		"window_text": "All purchase orders -- Operations",
+		"window_class": "Chrome_WidgetWin_1",
+		"object_text": "",
+		"object_role": "ROLE_SYSTEM_WINDOW",
+		"object_class": "Chrome_RenderWidgetHostHWND",
+		"version": 0,
+		"object_type": "DomDynamicsAXGrid",
+		"object_flavor": "Grid",
+		"object_name": "purchtablelistpage_Grid",
+		"window_name": "All purchase orders -- Operations",
+		"xpath": "//div[@id='purchtablelistpage_3_Grid' and @role='grid']",
+		"title": "All purchase orders -- Operations",
+		"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+	}
+}
