@@ -220,7 +220,7 @@ var saved_script_objects={
 		"object_name": "Main",
 		"object_library": "Chrome HTML",
 		"window_name": "Order: New Order",
-		"xpath": "/html/body/div[6]/div[@id='crmContentPanel']/iframe[@name='contentIFrame1' and @id='contentIFrame1']@@@/html/body/div[@id='Dialog_pricelevelid_IMenu']/div[2]/ul[@id='pricelevelid_IMenu']/li[@id='item26']/a[2]",
+		"xpath": "//iframe[@id='contentIFrame1']@@@//div[@id='Dialog_pricelevelid_IMenu']//a[@title='Main']",
 		"title": "Order: New Order",
 		"url": "https://internalcrm.ms365.grinmark.com:444/CRM365/main.aspx#698536284"
 	},
@@ -295,7 +295,7 @@ var saved_script_objects={
 		"object_name": "John Smith",
 		"object_library": "Chrome HTML",
 		"window_name": "Order: New Order",
-		"xpath": "//iframe[@id=\"contentIFrame0\"]@@@//a[@title=\"John Smith\"]",
+		"xpath": "//iframe[@id=\"contentIFrame1\"]@@@//div[@id=\"Dialog_customerid_IMenu\" and @displayed='true']//span[@title='John Smith']",
 		"title": "Order: New Order",
 		"url": "https://internalcrm.ms365.grinmark.com:444/CRM365/main.aspx#611378256"
 	},
