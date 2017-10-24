@@ -10,6 +10,28 @@ function NavigateLeads()
 	Tester.Assert("Leads list opened", SeS('Leads1') != null);
 }
 
+/** @scenario ShowcaseGridAPI*/
+function ShowcaseGridAPI()
+{
+	var grid = SeS('Grid');
+	
+	var rowCount = grid.GetRowCount();
+	var columnIndex = 1;
+	
+	var cell = grid.GetCell(0, 1);
+	Tester.Message("Row 0, Col 1 - Text: " + cell);
+	
+	var cell = grid.GetCell(0, "Name");
+	Tester.Message("Row 0, Col 'Name' - Text: " + cell);
+
+	var cell = grid.GetCell("John Smith", "Name");
+	Tester.Message("Cell with text 'John Smith', Col 'Name' - Text: " + cell);
+
+	grid.DoClickCell(2, 3);
+	grid.DoClickCell(1, "Status Reason");
+	grid.DoClickCell("New", "Status Reason");
+}
+
 /** @scenario CreateNewLead*/
 function CreateNewLead()
 {

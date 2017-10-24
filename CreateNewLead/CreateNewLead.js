@@ -3,6 +3,8 @@
 
 function Test()
 {
+	g_chromeSingleWindow = true;
+	Navigator.Open("");
 	CreateNewLead();
 	DeleteLead();
 }
