@@ -29,12 +29,21 @@ function CompleteOrder()
 	SeS('Save__Save_this_Order_').DoClick();
 
 // Two products to price list
-	SeS('Add_Order_Product_record_').DoClick();
+	var plusButton = Global.DoWaitFor('Add_Order_Product_record_');
+	var maxAttempts = 10;
+	while(maxAttempts > 0 && plusButton.GetX() == 0)
+	{
+		Globa.DoSleep(1000);
+		maxAttempts--;
+	}
+	Tester.Message(plusButton.GetX() + " / " + plusButton.GetY());
+	plusButton.DoClick();
 	SeS('Existing_ProductWriteMinusin_Pro').DoClick();
 
 	SeS('Text').DoClick();
 	SeS('Text').DoSetText("Carrot");
 	Global.DoSendKeys('{TAB}');
+	Global.DoSleep(3000);
 	
 	SeS('Add_Order_Product_record_').DoClick();
 	SeS('Existing_ProductWriteMinusin_Pro').DoClick();
@@ -42,6 +51,7 @@ function CompleteOrder()
 	SeS('Text').DoClick();
 	SeS('Text').DoSetText("Potato");
 	Global.DoSendKeys('{TAB}');	
+	Global.DoSleep(3000);
 
 // Add phone call
 	SeS('_F6A3F83BMinus6766Minus4EC9Minus').DoClick();
@@ -57,8 +67,9 @@ function CompleteOrder()
 /** @scenario VerifyOrderCreated*/
 function VerifyOrderCreated()
 {
-	Tester.AssertEqual("Verify that: RowCount=1", SeS('Grid').GetRowCount(), 1);
-	Tester.AssertEqual("Order name is 'Test Order'", SeS('Grid').GetCell(0, 1), "Test Order");
+	var grid = Global.DoWaitFor('Grid');
+	Tester.AssertEqual("Verify that: RowCount=1", grid.GetRowCount(), 1);
+	Tester.AssertEqual("Order name is 'Test Order'", grid.GetCell(0, 1), "Test Order");
 }
 
 /** @scenario DeleteOrder*/

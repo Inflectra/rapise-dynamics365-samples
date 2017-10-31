@@ -68,6 +68,7 @@ function CreateNewLead()
 	
 	// Verify Lead was created
 	Global.DoWaitFor("Grid");
+	Global.DoSleep(2000);
 	Tester.AssertEqual("Lead created and displayed in the list", SeS('Grid').GetCell(0, 1), "Denny Crane");
 	
 	

@@ -345,7 +345,7 @@ var saved_script_objects={
 		"object_name": "Add Order Product record.",
 		"object_library": "Chrome HTML",
 		"window_name": "Order: Test Order",
-		"xpath": "/html/body/div[6]/div[@id='crmContentPanel']/iframe[@name='contentIFrame1' and @id='contentIFrame1']@@@/html/body/div[@id='crmForm']/div[@id='rofContainer']/div[@id='SubGridCommandBarData']/div/div[@id='mainContainer']/div/div[@id='formContainer']/div[@id='tdAreas']/div/div[@id='areaForm']/div[@id='formBodyContainer']/div[@id='crmFormTabContainer']/div[@name='summary_tab' and @id='tab0']/div[@id='summary_tab_content']/div[2]/div[1]/table[@name='products' and @id='{3C6599DB-B3E0-40A4-AA8B-3041F0663404}']/tbody/tr[2]/td/div[@id='salesorderdetailsGrid_d']/span[@id='salesorderdetailsGrid_span']/div/div[1]/span/div[@id='appGridQueryFilterContainer_salesorderdetailsGrid']/div/div/div[@id='titleContainer_salesorderdetailsGrid']/div[@id='salesorderdetailsGrid_contextualButtonsContainer']/div[1]/a[@id='salesorderdetailsGrid_addImageButton']",
+		"xpath": "//iframe[@id=\"contentIFrame1\"]@@@//a[@id='salesorderdetailsGrid_addImageButton']",
 		"title": "Order: Test Order",
 		"url": "https://internalcrm.ms365.grinmark.com:444/CRM365/main.aspx#611378256"
 	},
@@ -372,31 +372,6 @@ var saved_script_objects={
 		"object_library": "Chrome HTML",
 		"window_name": "Order: Test Order",
 		"xpath": "/html/body/div[6]/div[@id='crmContentPanel']/iframe[@name='contentIFrame1' and @id='contentIFrame1']@@@/html/body/div[@id='crmForm']/div[@id='rofContainer']/div[@id='SubGridCommandBarData']/div/div[@id='mainContainer']/div/div[@id='formContainer']/div[@id='tdAreas']/div[@id='inlineLookupControlForSubgrid_salesorderdetailsGrid_flyOut']/div[@id='inlineLookupControlForSubgrid_salesorderdetailsGrid']/div[@id='lookup_salesorderdetailsGrid']/div[2]/table[@id='lookup_salesorderdetailsGrid_lookupTable']/tbody/tr/td[1]/input[@id='lookup_salesorderdetailsGrid_ledit']",
-		"title": "Order: Test Order",
-		"url": "https://internalcrm.ms365.grinmark.com:444/CRM365/main.aspx#611378256"
-	},
-	"Add_Order_Product_record_1": {
-		"locations": [
-			{
-				"locator_name": "HTML",
-				"location": {
-					"xpath": "param:xpath",
-					"url": "param:url",
-					"title": "param:title"
-				}
-			}
-		],
-		"window_class": "Chrome_WidgetWin_1",
-		"object_text": "Chrome Legacy Window",
-		"object_role": "ROLE_SYSTEM_WINDOW",
-		"object_class": "Chrome_RenderWidgetHostHWND",
-		"version": 0,
-		"object_type": "HTMLObject",
-		"object_flavor": "Link",
-		"object_name": "Add Order Product record.",
-		"object_library": "Chrome HTML",
-		"window_name": "Order: Test Order",
-		"xpath": "/html/body/div[6]/div[@id='crmContentPanel']/iframe[@name='contentIFrame1' and @id='contentIFrame1']@@@/html/body/div[@id='crmForm']/div[@id='rofContainer']/div[@id='SubGridCommandBarData']/div/div[@id='mainContainer']/div/div[@id='formContainer']/div[@id='tdAreas']/div[1]/div[@id='areaForm']/div[@id='formBodyContainer']/div[@id='crmFormTabContainer']/div[@name='summary_tab' and @id='tab0']/div[@id='summary_tab_content']/div[2]/div[1]/table[@name='products' and @id='{3C6599DB-B3E0-40A4-AA8B-3041F0663404}']/tbody/tr[2]/td/div[@id='salesorderdetailsGrid_d']/span[@id='salesorderdetailsGrid_span']/div/div[1]/span/div[@id='appGridQueryFilterContainer_salesorderdetailsGrid']/div/div/div[@id='titleContainer_salesorderdetailsGrid']/div[@id='salesorderdetailsGrid_contextualButtonsContainer']/div[1]/a[@id='salesorderdetailsGrid_addImageButton']",
 		"title": "Order: Test Order",
 		"url": "https://internalcrm.ms365.grinmark.com:444/CRM365/main.aspx#611378256"
 	},

@@ -3,6 +3,7 @@
 
 function Test()
 {
+	Navigator.Open("");
 	StartNewOrder();
 	CompleteOrder();
 	VerifyOrderCreated();
