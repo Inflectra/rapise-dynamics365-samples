@@ -455,7 +455,6 @@ var saved_script_objects={
 	"title": "All purchase orders -- Operations",
 	"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
 },
-
 	purchtablelistpage_Grid:{
 	"locations": [
 		{
@@ -478,6 +477,31 @@ var saved_script_objects={
 	"object_name": "purchtablelistpage_Grid",
 	"window_name": "All purchase orders -- Operations",
 	"xpath": "//div[@id='purchtablelistpage_3_Grid' and @role='grid']",
+	"title": "All purchase orders -- Operations",
+	"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
+},
+
+	purchtablelistpage_LineViewTab1:{
+	"locations": [
+		{
+			"locator_name": "HTML",
+			"location": {
+				"xpath": "param:xpath",
+				"url": "param:url",
+				"title": "param:title"
+			}
+		}
+	],
+	"window_class": "Chrome_WidgetWin_1",
+	"object_text": "Purchase order header",
+	"object_role": "ROLE_SYSTEM_WINDOW",
+	"object_class": "Chrome_RenderWidgetHostHWND",
+	"version": 0,
+	"object_type": "DomDynamicsAXTabControl",
+	"object_flavor": "TabControl",
+	"object_name": "purchtablelistpage_LineViewTab",
+	"window_name": "All purchase orders -- Operations",
+	"xpath": "//div[contains(@id,'purchtablelistpage') and contains(@id,'LineViewTab')]",
 	"title": "All purchase orders -- Operations",
 	"url": "https://d365oef0aab7797234d85aos.cloudax.dynamics.com/?cmp=DAT&mi=PurchTableListPage"
 }
