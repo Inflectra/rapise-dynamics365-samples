@@ -6,7 +6,7 @@
   <ReportPath>CreatePurchaseOrder.trp</ReportPath>
   <CommandInterval>1000</CommandInterval>
   <IterationsCount>1</IterationsCount>
-  <StopOnError>false</StopOnError>
+  <StopOnError>true</StopOnError>
   <CacheObjects>false</CacheObjects>
   <ObjectLookupAttempts>10</ObjectLookupAttempts>
   <ObjectLookupAttemptInterval>1000</ObjectLookupAttemptInterval>
@@ -56,11 +56,7 @@
         </TestFiles>
       </TestGroup>
     </Groups>
-    <TestFiles>
-      <TestFile>
-        <Path>%ENGINE%\Engine.sstest</Path>
-      </TestFile>
-    </TestFiles>
+    <TestFiles />
   </TestFiles>
   <CustomStrings />
   <TestParams>
