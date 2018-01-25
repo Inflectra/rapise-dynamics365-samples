@@ -10,10 +10,3 @@ function GetPurchaseOrderNumber()
 	}
 	return null;
 }
-
-function ExpandCell(/**objectId*/ gridId, /**number*/ row, /**number*/ col)
-{
-	var grid = SeS(gridId);
-	grid.DoClickCell(row, col);
-	grid.DoClickCell(row, col, "L", -15);
-}
