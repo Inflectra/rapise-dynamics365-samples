@@ -32,3 +32,7 @@ Sample tests for Dynamics 365.
 [![Create New Order](http://img.youtube.com/vi/Nl8v9LjSZSo/0.jpg)](https://youtu.be/Nl8v9LjSZSo?list=PL1GncVUgF5nt2ha_RufRAqf40qg9O4vC3 "Create New Order")
 
 *Click on the image to view the video of script playback*
+
+- D365SalesCreateNewTask
+
+Creates and deletes a new task. For a new task the test sets Subject and Due date.
