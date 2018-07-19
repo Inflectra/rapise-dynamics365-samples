@@ -44,3 +44,10 @@ Sample tests for Dynamics 365.
 ## D365SalesCreateNewTask
 
 Creates and deletes a new task. For a new task the test sets Subject and Due date.
+
+# Unified Service Desk for Microsoft Dynamics 365
+
+## UnifiedServiceDesk
+
+A sample test that launches USD (assuming that login is automatic), opens a case and reads data from various panels: Call Script, Dashboard and KB Search. Go into UnifiedServiceDesk folder to see the details including script playback video.
+
