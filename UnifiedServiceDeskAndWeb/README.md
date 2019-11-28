@@ -1,6 +1,6 @@
 ## UnifiedServiceDeskAndWeb
 
-This sample demonstrates how to interact with Internet Explorer and Unified Service Desk desktop client within a single scenario.
+This sample demonstrates how to interact with Internet Explorer and Unified Service Desk desktop client within a joint scenario.
 
 ## Key Points
 
@@ -20,19 +20,19 @@ g_load_libraries=["%g_browserLibrary:Internet Explorer HTML%", "DomDynamicsCrm",
 Since we have "Internet Explorer HTML" and "UnifiedServiceDesk" browser profiles switching between them looks like:
 
 ```javascript
-	// Select IE browser
-	Navigator.SelectBrowserProfile("Internet Explorer HTML");
-	// Run steps in IE
-    // ...
-	// Detach from IE
-	Navigator.Detach();
-	
-	// Select USD web profile
-	Navigator.SelectBrowserProfile('UnifiedServiceDesk');
-    // Run web steps in USD
-    // ...
-	// Detach from USD
-	Navigator.Detach();
+// Select IE browser
+Navigator.SelectBrowserProfile("Internet Explorer HTML");
+// Run steps in IE
+// ...
+// Detach from IE
+Navigator.Detach();
+
+// Select USD web profile
+Navigator.SelectBrowserProfile('UnifiedServiceDesk');
+// Run web steps in USD
+// ...
+// Detach from USD
+Navigator.Detach();
 ```
 
 ### Detach from IE
@@ -62,5 +62,5 @@ This sample also demonstrates how to launch USD and wait for it to popup and how
 
 ## Test Playback
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KnzvpdXYPKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[View on YouTube](https://www.youtube.com/embed/KnzvpdXYPKo)
 
