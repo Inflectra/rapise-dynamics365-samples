@@ -62,5 +62,5 @@ This sample also demonstrates how to launch USD and wait for it to popup and how
 
 ## Test Playback
 
-[View on YouTube](https://www.youtube.com/embed/KnzvpdXYPKo)
+[View on YouTube](https://youtu.be/KnzvpdXYPKo)
 
