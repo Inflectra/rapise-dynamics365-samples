@@ -1,0 +1,6 @@
+<log type="Session" name="AMSTERDAM:squirrel" at="2019-11-28 17:56:56.374"/>
+<log type="Test" name="USDWeb" status="Info"  at="2019-11-28 17:56:56.894"><data type="text">Test Started: C:\Users\squirrel\Documents\My Rapise Tests\UnifiedServiceDeskAndWeb\USDWeb\Main.js</data>
+</log>
+<log type="Message" name="Starting scenario: Test" status="Info"  at="2019-11-28 17:56:56.894"/>
+<log type="Assert" name="My_Active_Cases.DoEnsureVisible([])" status="Pass"  at="2019-11-28 17:56:58.878" comment="Returned Value: [object Object]" />
+<log type="Test" name="USDWeb" status="Pass" closed="USDWeb" _guid="undefined"  at="2019-11-28 17:56:58.878" comment="Passed:1 Failed:0 Time:1.984s" />
