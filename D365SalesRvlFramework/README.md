@@ -14,6 +14,8 @@ Example of JavaScript actions:
 
 1. ChangeArea
 
+Note: test cases are implemented as Sub Tests and should share objects and user-defined code with the parent test.
+
 ### Usage of Actions
 
 To use RVL-based action in RVL of a test case choose `Functions` as Object and `Run` as action. Specify low-level action name in `name` parameter.
