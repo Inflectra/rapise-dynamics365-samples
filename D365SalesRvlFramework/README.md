@@ -20,7 +20,7 @@ To use RVL-based action in RVL of a test case choose `Functions` as Object and `
 
 To use JavaScript-based action in RVL of a test case choose `Functions` as Object and low-level action name as Action, provide parameter values if required.
 
-![RVL Example](D365SalesRvlFrameworkUsageExample1.png)
+![RVL Example](Media/D365SalesRvlFrameworkUsageExample1.png)
 
 ### Login
 
