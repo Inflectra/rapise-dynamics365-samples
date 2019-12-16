@@ -1,3 +1,7 @@
+function TestInit()
+{
+	RVL.DoPlayScript("%WORKDIR%\\Main.rvl.xlsx", "Init");
+}
 
 function Test(params)
 {
