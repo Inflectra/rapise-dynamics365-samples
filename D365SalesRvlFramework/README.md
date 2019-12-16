@@ -13,6 +13,9 @@ Examples of RVL actions:
 Example of JavaScript actions:
 
 1. ChangeArea
+2. SelectTab
+3. LookupField
+4. SetDate
 
 Note: test cases are implemented as Sub Tests and should share objects and user-defined code with the parent test.
 
@@ -31,3 +34,35 @@ To make login work in your environment create `Config.json` in the root folder o
 ```javascript
 {"password":"<your password>"}
 ```
+
+### Custom Actions Reference
+
+You may find example of each action in TestCase1/Main.rvl.xlsx
+
+#### ChangeArea
+
+In your test learn the button that expands the popup menu and give it the name `OpenAreaList`  (already done in this framework).
+
+![Change Area](Media/ChangeArea.png)
+
+In RVL choose this action and specify area name to select.
+
+#### SelectTab
+
+![Select Tab](Media/TabsCrm.png)
+
+In RVL choose this action and specify tab name.
+
+#### LookupField
+
+![Lookup Field](Media/LookupCrm.png)
+
+Learn the field. In RVL choose this action and specify object id and field value to select.
+
+#### SetDate
+
+![Date Field](Media/DateCrm.png)
+
+Learn the field. In RVL choose this action and specify object id and field value to select.
+
+

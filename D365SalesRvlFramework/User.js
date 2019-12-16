@@ -81,6 +81,23 @@ function LookupField(/**objectId*/ field, /**string*/ value)
 	}
 }
 
+
+function SetDate(/**objectId*/ field, /**string*/ value)
+{
+	var obj = SeS(field);
+	if (obj)
+	{
+		obj._DoClick();
+		obj._DoClick();
+		obj.DoSetText("12/25/1999");
+		obj._DoSendKeys("{TAB}");
+	}
+	else
+	{
+		Tester.Assert("Date field is not found: " + field, false);
+	}
+}
+
 /**
  * Navigates to the specified URL and performs login at https://login.microsoftonline.com/
  * Opens a browser if necessary.
