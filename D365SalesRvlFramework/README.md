@@ -43,25 +43,25 @@ You may find example of each action in TestCase1/Main.rvl.xlsx
 
 In your test learn the button that expands the popup menu and give it the name `OpenAreaList`  (already done in this framework).
 
-![Change Area](Media/ChangeArea.png)
+<img src="Media/ChangeAreaCrm.png" width="200">
 
 In RVL choose this action and specify area name to select.
 
 #### SelectTab
 
-![Select Tab](Media/TabsCrm.png)
+<img src="Media/TabsCrm.png" width="365">
 
 In RVL choose this action and specify tab name.
 
 #### LookupField
 
-![Lookup Field](Media/LookupCrm.png)
+<img src="Media/LookupCrm.png" width="385">
 
 Learn the field. In RVL choose this action and specify object id and field value to select.
 
 #### SetDate
 
-![Date Field](Media/DateCrm.png)
+<img src="Media/DateCrm.png" width="375">
 
 Learn the field. In RVL choose this action and specify object id and field value to select.
 
