@@ -28,6 +28,59 @@ function ChangeArea(/**string*/ name)
 	}
 }
 
+
+/** 
+ * Select tab pn the page
+ */
+function SelectTab(/**string*/ name)
+{
+	var xpath = "//li[@role='tab' and @title='" + name + "']";
+	var obj = Navigator.Find(xpath);
+	if (obj)	
+	{
+		obj.object_name = name;
+		obj.DoClick();
+	}
+	else
+	{
+		Tester.Assert("Tab element is not found: " + name, false);
+	}
+}
+
+/**
+ * Lookup field
+ */
+function LookupField(/**objectId*/ field, /**string*/ value) 
+{
+	var obj = SeS(field);
+	if (obj)
+	{
+		obj._DoSetText(value);
+		var xpath = "//span[@class='ic ']";
+		var item = null;
+		for(var k=0;k<g_objectLookupAttempts;k++)
+		{
+			item = Navigator.Find(xpath);
+			if (item)
+			{
+				item.object_name = value;
+				item.DoClick();
+				break;
+			}
+			Global.DoSleep(g_objectLookupAttemptInterval);
+		}
+		
+		if (!item)
+		{
+			Tester.Assert("Lookup item is not found: " + value, false);
+		}
+	}
+	else
+	{
+		Tester.Assert("Lookup field is not found: " + field, false);
+	}
+}
+
 /**
  * Navigates to the specified URL and performs login at https://login.microsoftonline.com/
  * Opens a browser if necessary.

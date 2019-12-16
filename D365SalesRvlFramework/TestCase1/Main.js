@@ -1,7 +1,9 @@
+
 function TestInit()
 {
 	RVL.DoPlayScript("%WORKDIR%\\Main.rvl.xlsx", "Init");
 }
+
 
 function Test(params)
 {
@@ -9,6 +11,5 @@ function Test(params)
 }
 
 g_load_libraries=["%g_browserLibrary:Chrome HTML%", "DomDynamicsCrm"];
-
 
 

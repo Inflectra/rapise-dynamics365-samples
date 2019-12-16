@@ -61,6 +61,9 @@
     <TestParam name="RVL Script" variable="g_rvlScriptPath" defaultValue="%WORKDIR%\TestCase1\Main.rvl.xlsx" description="Main RVL Script to execute" output="false" ask="false">
       <PossibleValues />
     </TestParam>
+    <TestParam name="Detect Web Plugins" variable="g_webPluginsAutoDetect" defaultValue="False" description="Enable web plugins auto detection" output="false" ask="false">
+      <PossibleValues />
+    </TestParam>
   </TestParams>
   <Methodology>Web</Methodology>
   <MethodologyOptions>
