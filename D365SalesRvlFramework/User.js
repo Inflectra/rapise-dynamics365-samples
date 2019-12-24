@@ -56,7 +56,7 @@ function LookupField(/**objectId*/ field, /**string*/ value)
 	if (obj)
 	{
 		obj._DoSetText(value);
-		var xpath = "//span[@class='ic ']";
+		var xpath = "//ul//label/span[text()='" + value + "']";
 		var item = null;
 		for(var k=0;k<g_objectLookupAttempts;k++)
 		{
