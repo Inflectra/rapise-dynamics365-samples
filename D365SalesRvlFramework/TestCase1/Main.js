@@ -1,6 +1,7 @@
 
 function TestInit()
 {
+	Navigator.EnsureVisibleVerticalAlignment = "center";
 	RVL.DoPlayScript("%WORKDIR%\\Main.rvl.xlsx", "Init");
 }
 
