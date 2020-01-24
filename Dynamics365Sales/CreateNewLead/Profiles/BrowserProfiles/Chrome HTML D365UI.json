@@ -1,0 +1,6 @@
+{
+  "browserLibrary": "Chrome HTML",
+  "browserPath": "",
+  "browserParams": " --window-size=600,800 --incognito",
+  "clickMode": "event"
+}
