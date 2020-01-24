@@ -107,6 +107,15 @@ function SetDate(/**objectId*/ field, /**string*/ value)
  */
 function LoginMicrosoftOnline(/**string*/ url, /**string*/ userName, /**string*/ password)
 {
+	if (!password)
+	{
+		var credentialsFile = "%WORKDIR%\\..\\Credentials.json";
+		if (File.Exists(credentialsFile))
+		{
+			password = Global.GetProperty("Password", "", credentialsFile);
+		}
+	}
+
 	var o = {
 		"UseAnotherAccount": "//div[@id='otherTileText']",
 		"UserName": "//input[@name='loginfmt']",

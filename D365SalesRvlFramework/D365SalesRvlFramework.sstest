@@ -37,6 +37,9 @@
     </Groups>
     <TestFiles>
       <TestFile>
+        <Path>Dropdowns.xlsx</Path>
+      </TestFile>
+      <TestFile>
         <Path>Main.js</Path>
       </TestFile>
       <TestFile>
