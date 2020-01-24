@@ -1,0 +1,6 @@
+{
+  "browserLibrary": "Chrome HTML",
+  "browserPath": "",
+  "browserParams": "--incognito --start-maximized",
+  "clickMode": "click"
+}
