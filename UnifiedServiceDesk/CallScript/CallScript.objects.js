@@ -10,7 +10,7 @@ var saved_script_objects={
 				}
 			}
 		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;811a00d0-aad4-4c3f-8fe0-7288b1f6e154]",
+		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;1e274c00-146a-44fb-9a0c-bfa4400ecc4a]",
 		"object_text": "",
 		"object_role": "param:object_class",
 		"object_class": "Tab",
@@ -19,8 +19,9 @@ var saved_script_objects={
 		"object_flavor": "TabControl",
 		"object_name": "TabControl",
 		"ignore_object_name": true,
+		"object_library": "UIAutomation",
 		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Custom/Pane/Tab"
+		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Group/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Group/Pane/Tab"
 	},
 	"ComboBox": {
 		"locations": [
@@ -122,17 +123,18 @@ var saved_script_objects={
 				}
 			}
 		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;811a00d0-aad4-4c3f-8fe0-7288b1f6e154]",
+		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;1e274c00-146a-44fb-9a0c-bfa4400ecc4a]",
 		"object_text": "",
 		"object_role": "param:object_class",
 		"object_class": "Text",
 		"version": 0,
 		"object_type": "UIALabel",
 		"object_flavor": "Label",
-		"object_name": "Customer Name",
+		"object_name": "Customer Name: Alpine Ski House",
+		"ignore_object_name": true,
+		"object_library": "UIAutomation",
 		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Custom/Pane/Tab/General/Custom/regex:Customer Name.*",
-		"ignore_object_name": true
+		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Group/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Group/Pane/Tab/General/Custom/Customer Name: Alpine Ski House"
 	},
 	"Email": {
 		"locations": [
@@ -145,17 +147,18 @@ var saved_script_objects={
 				}
 			}
 		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;811a00d0-aad4-4c3f-8fe0-7288b1f6e154]",
+		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;1e274c00-146a-44fb-9a0c-bfa4400ecc4a]",
 		"object_text": "",
 		"object_role": "param:object_class",
 		"object_class": "Text",
 		"version": 0,
 		"object_type": "UIALabel",
 		"object_flavor": "Label",
-		"object_name": "Email",
+		"object_name": "Email: Cathan@alpineskihouse.com",
+		"ignore_object_name": true,
+		"object_library": "UIAutomation",
 		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Custom/Pane/Tab/General/Custom/regex:Email.*",
-		"ignore_object_name": true
+		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Group/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Group/Pane/Tab/General/Custom/Email: Cathan@alpineskihouse.com/Email: Cathan@alpineskihouse.com"
 	},
 	"Phone": {
 		"locations": [
@@ -168,17 +171,18 @@ var saved_script_objects={
 				}
 			}
 		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;811a00d0-aad4-4c3f-8fe0-7288b1f6e154]",
+		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;1e274c00-146a-44fb-9a0c-bfa4400ecc4a]",
 		"object_text": "",
-		"object_role": "param:object_class",
-		"object_class": "Text",
+		"object_role": "param:object_flavor",
+		"object_class": "param:object_flavor",
 		"version": 0,
-		"object_type": "UIALabel",
-		"object_flavor": "Label",
+		"object_type": "UIAHyperlink",
+		"object_flavor": "Hyperlink",
 		"object_name": "+43-1-12345-0",
+		"ignore_object_name": true,
+		"object_library": "UIAutomation",
 		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Custom/Pane/Tab/General/Custom/regex:\\+.*",
-		"ignore_object_name": true
+		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Group/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Group/Pane/Tab/General/Custom/+43-1-12345-0/+43-1-12345-0"
 	},
 	"ScriptText": {
 		"locations": [
@@ -191,40 +195,18 @@ var saved_script_objects={
 				}
 			}
 		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;811a00d0-aad4-4c3f-8fe0-7288b1f6e154]",
+		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;1e274c00-146a-44fb-9a0c-bfa4400ecc4a]",
 		"object_text": "",
 		"object_role": "param:object_class",
 		"object_class": "Text",
 		"version": 0,
 		"object_type": "UIALabel",
 		"object_flavor": "Label",
-		"object_name": "",
-		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/WorkflowPanel/Agent Scripting/Custom/ScriptText",
-		"ignore_object_name": true
-	},
-	"TabControl1": {
-		"locations": [
-			{
-				"locator_name": "UIAutomation",
-				"location": {
-					"location": "param:location",
-					"window_name": "param:window_name",
-					"window_class": "regex:HwndWrapper\\[UnifiedServiceDesk\\.exe.+\\]"
-				}
-			}
-		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;a0712c34-d0b5-433f-8ec0-b3f72c65cb82]",
-		"object_text": "",
-		"object_role": "param:object_class",
-		"object_class": "Tab",
-		"version": 0,
-		"object_type": "UIATabControl",
-		"object_flavor": "TabControl",
-		"object_name": "TabControl",
+		"object_name": "Thank you for contacting Woodgrove Bank. My name is Adam and I'll help you with the Delivery related to Delivery never arrived.",
 		"ignore_object_name": true,
+		"object_library": "UIAutomation",
 		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Custom/Pane/Tab"
+		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Group/ExpanderSessionDetails/Pane/WorkflowPanel/Agent Scripting/Group/ScriptText"
 	},
 	"Social_Info": {
 		"locations": [
@@ -259,16 +241,17 @@ var saved_script_objects={
 				}
 			}
 		],
-		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;a0712c34-d0b5-433f-8ec0-b3f72c65cb82]",
+		"window_class": "HwndWrapper[UnifiedServiceDesk.exe;;1e274c00-146a-44fb-9a0c-bfa4400ecc4a]",
 		"object_text": "",
-		"object_role": "param:object_class",
-		"object_class": "Text",
+		"object_role": "param:object_flavor",
+		"object_class": "param:object_flavor",
 		"version": 0,
-		"object_type": "UIALabel",
-		"object_flavor": "Label",
-		"object_name": "",
+		"object_type": "UIAHyperlink",
+		"object_flavor": "Hyperlink",
+		"object_name": "Twitter",
+		"ignore_object_name": true,
+		"object_library": "UIAutomation",
 		"window_name": "Unified Service Desk for Microsoft Dynamics 365",
-		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Custom/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Custom/Pane/Tab/Social Info/Twitter:     Twitter",
-		"ignore_object_name": true
+		"location": "MainAgentDesktop/MainWorkArea/Custom Panel/Group/ExpanderSessionDetails/Pane/SessionExplorerPanel/Overview/Group/Pane/Tab/Social Info/Twitter:     Twitter/Twitter"
 	}
 };
